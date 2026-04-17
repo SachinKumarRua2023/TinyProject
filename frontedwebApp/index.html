@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Notes + AI</title>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="app.js" defer></script>
+
+  <style>
+    body {
+      font-family: Arial;
+      background: #343541;
+      color: white;
+      margin: 0;
+    }
+
+    h2 {
+      text-align: center;
+      padding: 10px;
+    }
+
+    #chat {
+      max-width: 600px;
+      margin: auto;
+      padding: 10px;
+    }
+
+    .msg {
+      background: #444654;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 8px;
+    }
+
+    .user {
+      background: #3b3f4a;
+    }
+
+    .actions button {
+      margin-right: 5px;
+      cursor: pointer;
+    }
+
+    #inputBox {
+      display: flex;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background: #40414f;
+      padding: 10px;
+    }
+
+    #inp {
+      flex: 1;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+    }
+
+    button {
+      padding: 10px;
+      margin-left: 5px;
+    }
+  </style>
+</head>
+
+<body>
+  <h2>📝 Notes + 🤖 AI Chat</h2>
+
+  <div id="chat"></div>
+
+  <div id="inputBox">
+    <input id="inp" placeholder="Ask something..." />
+    <button onclick="addNote()">Send</button>
+  </div>
+</body>
+</html>
