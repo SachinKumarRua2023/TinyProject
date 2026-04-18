@@ -1,4 +1,4 @@
-const API = 'http://127.0.0.1:8000/notes/'
+const API ="https://tinyproject-nm7k.onrender.com/notes/"
 
 async function loadNotes() {
   try {
