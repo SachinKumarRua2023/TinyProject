@@ -26,11 +26,10 @@ SECRET_KEY = 'django-insecure-ksl!5y@ikw3sg8ng)^fz8j9m4cukjdw95hycy4@ljki4=4d@eg
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.getenv('DEBUG', 'False') == 'True'
-DEBUG = True
 # ALLOWED_HOSTS = [*os.getenv('ALLOWED_HOSTS', '').split(',')]
 
 
-
+ALLOWED_HOSTS = ["tinyproject-nm7k.onrender.com"]
 # Application definition
 
 INSTALLED_APPS = [
@@ -90,7 +89,6 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/6.0/ref/settings/#auth-password-validators
